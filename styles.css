@@ -1,0 +1,162 @@
+/* ~~~~~~~~~~~~~~~~ COLORS ~~~~~~~~~~~~~~~~ */
+:root {
+    --randomButtonColor: #fb2839;
+    --noun2ButtonColor: #fda226;
+    --adjectiveButtonColor: #bfe52c;
+    --resetButtonColor: #7CEA9C;
+    --showButtonColor: #29c29c;
+    --verbButtonColor: #5ce7ff;
+    --noun1ButtonColor: #b370c8;
+    --settingButtonColor: #ffa3d8;
+    --headerColor: #FFE570;
+    --pageBackgroundColor: #FFEE99;
+    --textColor: #0e0e0e;
+}
+
+/* ~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~ */
+@font-face {
+    font-family: "blocks";
+    src: url("./fonts/Chockablocknf-WqpG.ttf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "fun";
+    src: url("./fonts/BrokefoldFun-axP6m.otf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "chunky";
+    src: url(./fonts//ChunkyFriesDemoRegular-9YLwK.otf);
+    font-weight: auto;
+}
+@font-face {
+    font-family: "koala";
+    src: url(./fonts/PlayfulKoala-nRGlO.otf);
+    font-weight: auto;
+}
+/* ~~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~~ */
+html {
+    color: var(--textColor);
+    background-color: var(--pageBackgroundColor);
+    height: 100%;
+}
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: "chunky", sans-serif;
+    font-size: 3vw;
+}
+button {
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 10px 20px;
+    margin: 0; 
+    font-family: "fun", sans-serif;
+    font-weight: 900;
+}
+p {
+    font-family: "koala", sans-serif;
+    font-size: 1.7vw;
+}
+/* ~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~ */
+header {
+    display: flex;
+    background-color: var(--headerColor) ;    
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    font-family: "blocks", sans-serif;
+    font-size: 5vw;
+    word-spacing: 30px;
+}
+
+/* ~~~~~~~~~~~~~~~~ GENERATE ~~~~~~~~~~~~~~~~ */
+.generate-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+.button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+#noun1 {
+    background-color: var(--noun1ButtonColor);
+}
+#noun1:hover {
+    background-color: #bdb2ff;
+}
+#verb {
+    background-color: var(--verbButtonColor);
+}
+#verb:hover{
+    background-color: #a0c4ff;
+}
+#adjective {
+    background-color: var(--adjectiveButtonColor);
+}
+#adjective:hover{
+    background-color: #caffbf;
+}
+#noun2 {
+    background-color: var(--noun2ButtonColor);
+}
+#noun2:hover{
+    background-color: #ffd6a5;
+}
+#setting {
+    background-color: var(--settingButtonColor);
+}
+#setting:hover{
+    background-color: #ffc6ff;
+}
+
+
+/* ~~~~~~~~~~~~~~~~ SEE STORY ~~~~~~~~~~~~~~~~ */
+#playback {
+    background-color: var(--showButtonColor);
+}
+#playback:hover {
+    background-color: #9eddff;
+}
+#random {
+    background-color: var(--randomButtonColor);
+}
+#random:hover {
+    background-color: #ffadad;
+}
+#reset{
+    background-color: var(--resetButtonColor);
+}
+#reset:hover {
+    background-color: #9bf6ff;
+}
+.see-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+/* ~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~ */
+footer {
+    position: fixed;    
+    text-align: center;
+    bottom: 0;
+    font-family: "koala", sans-serif;
+    background-color: var(--headerColor);
+    width: 100%;
+}
